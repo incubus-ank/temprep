@@ -1,4 +1,4 @@
-from hashlib import sha256
+from hashlib import sha512
 import uuid 
 
-print(sha256(hex(uuid.getnode()).encode('utf-8')).hexdigest())
+print(sha512(hex(uuid.getnode()).encode('utf-8')).hexdigest())
